@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  {% include head.html %}
+
+  <body>
+
+    <!-- HEADER -->
+    {% include header.html %}
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="about" class="inner">
+        <h2>About</h2>
+        <img class="profile-pic" src="/assets/img/profile.jpeg">
+        <p>I'm currently a software engineer working on machine learning infrastructure at <a href="https://waymo.com">Waymo</a>, focusing on model evaluation. Before that, I worked at <a href="https://google.com">Google</a> on <a href="https://www.tensorflow.org/tfx">TensorFlow Extended</a>.</p>
+
+        <p>Before I started working, I was a <a href="https://provost.utdallas.edu/mcdermott-scholars">McDermott Scholar</a> at the <a href="https://utdallas.edu">University of Texas at Dallas</a>.</p>
+
+        <p>When I'm not coding, you can find me whacking tennis balls, painting cardboard boxes, and staring at chess puzzles.</p>
+      </section>
+
+      <section id="posts" class="inner">
+        <h2>Blog</h2>
+        <ul class="post-list">
+          {%- for post in site.posts -%}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h4>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h4>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+      
+      <section id="projects" class="inner">
+        <h2>Projects</h2>
+        {{ content }}
+      </section>
+
+    </div>
+
+    <!-- FOOTER  -->
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
+</html>
