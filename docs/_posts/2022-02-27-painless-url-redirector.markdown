@@ -25,7 +25,7 @@ Since the custom 404 page can include JavaScript, you can easily add something l
 ```html
   <script>
     const redirectDict = {
-      '/shortlink': '/some/really/long/link/that/is/too/long/to/share/with/people/directly'
+      '/shortlink': '/some/really/long/link/that/is/too/long/to/share'
     }
     
     let pathname = window.location.pathname;
