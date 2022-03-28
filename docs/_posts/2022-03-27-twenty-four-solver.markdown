@@ -102,4 +102,4 @@ Looking for an interesting 24 problem? Try this one:
 10 4 10 2
 ```
 
-In my opinion, this one is fiendishly difficult - there is actually only one correct answer, and it's...rather creative. If you stuck, try out [my solver](https://joshcai.com/24/?a=10&b=4&c=10&d=2&target=24) for this problem.
+In my opinion, this one is fiendishly difficult - there is actually only one correct answer, and it's...rather creative. If you get stuck, try out [my solver](https://joshcai.com/24/?a=10&b=4&c=10&d=2&target=24) for this problem.
