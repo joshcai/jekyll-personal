@@ -23,7 +23,7 @@
       <section id="posts" class="inner">
         <h2>Blog</h2>
         <ul class="post-list">
-          {%- for post in site.posts -%}
+          {%- for post in site.posts limit:3 -%}
           <li>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h4>
@@ -34,6 +34,9 @@
           </li>
           {%- endfor -%}
         </ul>
+        <div class="all-blog-posts-link">
+          <a href="/blog/">...</a>
+        </div>
       </section>
       
       <section id="projects" class="inner">

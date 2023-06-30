@@ -1,2 +1,5 @@
 language = "ruby"
 run = "cd docs && rm -rf jekyll-remote-theme* && bundle install && bundle exec jekyll serve --host=0.0.0.0" 
+
+[nix]
+channel = "stable-22_11"

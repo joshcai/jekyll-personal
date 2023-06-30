@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  {% include head.html %}
+
+  <body>
+
+    <!-- HEADER -->
+    {% include header.html %}
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+
+      <section id="posts" class="inner">
+        <h2>Blog</h2>
+        <ul class="post-list">
+          {%- for post in site.posts -%}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h4>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h4>
+          </li>
+          {%- endfor -%}
+        </ul>
+        
+        <div class="post-home">
+          <a href="/">Home</a>
+        </div>
+        
+      </section>
+
+    </div>
+
+    <!-- FOOTER  -->
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
+</html>
