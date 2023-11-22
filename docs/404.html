@@ -23,3 +23,23 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<script>
+  const redirectDict = {
+    // Blog posts
+    '/jekyll-setup': '/tech/2022/01/26/replit-for-jekyll-github-pages.html',
+    '/url-redirector': '/tech/2022/02/27/painless-url-redirector.html',
+    '/24-solver': '/tech/2022/03/27/twenty-four-solver.html',
+    '/jico-park': '/tech/2022/04/24/jico-park-in-unity.html',
+    '/website-recovery': '/tech/2023/01/28/recovering-a-9-year-old-project.html',
+    '/web-scraping': '/tech/2023/03/28/scraping-the-web-for-fun-and-profit.html',
+    '/team-quizzes': '/tech/2023/05/28/team-based-quizzes.html',
+    '/coroutine-simplicity': '/tech/2023/10/22/coroutine-simplicity.html',
+  }
+  
+  let pathname = window.location.pathname;
+  const val = redirectDict[pathname] ?? '';
+  if (val) {
+    window.location.replace('https://joshcai.com' + val);
+  }
+</script>
