@@ -3,3 +3,7 @@ run = "cd docs && rm -rf jekyll-remote-theme* && bundle install && bundle exec j
 
 [nix]
 channel = "stable-22_11"
+
+[[ports]]
+localPort = 4000
+externalPort = 80
