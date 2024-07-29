@@ -145,3 +145,17 @@ html {
 p img {
   width: 100%;
 }
+
+// Found via: https://codepen.io/sosuke/pen/Pjoqqp
+.social-icon {
+  filter: invert(32%) sepia(79%) saturate(3421%) hue-rotate(201deg) brightness(102%) contrast(107%);
+}
+
+.social-icon:hover {
+  filter: invert(55%) sepia(88%) saturate(903%) hue-rotate(115deg) brightness(105%) contrast(101%);
+}
+
+.social-icons-container {
+  padding-top: 10px;
+  margin-bottom: -5px;
+}
